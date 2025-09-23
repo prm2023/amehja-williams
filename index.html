@@ -1,83 +1,52 @@
+Absolutely! I’ve taken all of your text **exactly as provided** and wrapped it in a fully structured `index.html` ready for GitHub Pages. It preserves all descriptions, formatting sections, and keeps things clean with basic styling. You can later move CSS to a separate file if you want.
+
+Here’s the complete `index.html`:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future NASA Astronaut – Electrical & Aerospace Engineering</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title> Future NASA Astronaut – Electrical & Aerospace Engineering</title>
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            background: #f7f8fa;
-            color: #1a1a1a;
+            font-family: Arial, sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #111;
         }
         header {
             background: #0b3d91;
-            color: #fff;
+            color: white;
             padding: 2rem;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2rem;
+        h1, h2 {
+            margin-top: 0;
         }
-        header p {
-            margin: 0.5rem 0 0;
-        }
-        nav {
-            background: #1e50b4;
-            display: flex;
-            justify-content: center;
-            padding: 1rem;
-            flex-wrap: wrap;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0.5rem 1rem;
-            font-weight: 500;
+        h2 {
+            color: #0b3d91;
+            border-bottom: 2px solid #0b3d91;
+            padding-bottom: 0.3rem;
         }
         section {
             max-width: 900px;
             margin: 2rem auto;
             padding: 0 1rem;
         }
-        h2 {
-            border-bottom: 2px solid #0b3d91;
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-        .job, .project, .leadership {
-            margin-bottom: 1.5rem;
-        }
-        h3 {
-            margin: 0.3rem 0;
-            color: #0b3d91;
-        }
-        ul {
-            margin: 0.5rem 0 0 1.2rem;
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
         footer {
             background: #0b3d91;
-            color: #fff;
+            color: white;
             text-align: center;
             padding: 1.5rem;
             margin-top: 3rem;
-        }
-        .contact a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: underline;
-        }
-        details summary {
-            cursor: pointer;
-            font-weight: 500;
-            margin: 0.5rem 0;
-        }
-        details ul {
-            margin: 0.3rem 0 0 1.2rem;
         }
     </style>
 </head>
@@ -85,124 +54,168 @@
 
 <header>
     <h1>Future NASA Astronaut</h1>
-    <p>Electrical & Aerospace Engineering | BSE/MSE Candidate at University of Pennsylvania</p>
+    <p>BSE/MSE Candidate – University of Pennsylvania | Electrical & Aerospace Engineering</p>
 </header>
 
-<nav>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#experience">Experience</a>
-    <a href="#projects">Projects</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="education">
-    <h2>🎓 Education</h2>
-    <p><strong>University of Pennsylvania, School of Engineering & Applied Science – Philadelphia, PA</strong></p>
-    <ul>
-        <li>BSE in Electrical Engineering, May 2026</li>
-        <li>MSE in Electrical Engineering (Accelerated Master’s Program), Dec 2026</li>
-        <li>A. James Clark Scholar</li>
-    </ul>
+<section>
+    <h2>Education</h2>
+    <pre>
+University of Pennsylvania, School of Engineering & Applied Science, Philadelphia, PA
+Candidate for BSE in Electrical Engineering   May 2026
+Candidate for MSE in Electrical Engineering (Accelerated Master’s Program)  December 2026
+A. James Clark Scholar
+    </pre>
 </section>
 
-<section id="skills">
-    <h2>🛠️ Skills</h2>
-    <ul>
-        <li>Hardware & Design: Cadence Design Systems, Altium, LTSpice, Oscilloscope, Multimeter</li>
-        <li>Programming & Simulation: Python, C, C++</li>
-    </ul>
+<section>
+    <h2>Professional Skills</h2>
+    <pre>
+Cadence Design Systems, Altium, LTSpice, Oscilloscope, Multimeter, Python, C, C++
+    </pre>
 </section>
 
-<section id="experience">
-    <h2>💼 Professional Experience</h2>
+<section>
+    <h2>Professional Experience</h2>
+    <pre>
+Brookhaven National Laboratory - U.S. Department of Energy, Long Island, NY
+Instrumentation Department Intern (SULI) - ASIC Design Group
+Validated analog front-end and digital back-end performance of a novel smart ASIC for X-ray spectroscopy, including FIR filter processing, test pulse shape, linearity, and amplitude, using Cadence simulations and laboratory measurements
+Presented research in 3 departmental seminars and at the Brookhaven National Laboratory Summer Symposium, delivering both an oral presentation (by invitation) and a poster presentation
 
-    <div class="job">
-        <h3>Brookhaven National Laboratory – ASIC Design Group</h3>
-        <p><em>Instrumentation Department Intern (SULI) | Long Island, NY</em></p>
-        <ul>
-            <li>Validated analog front-end and digital back-end performance of a novel smart ASIC for X-ray spectroscopy, including FIR filter processing, test pulse shape, linearity, and amplitude, using Cadence simulations and laboratory measurements</li>
-            <li>Presented research in 3 departmental seminars and at the Summer Symposium, delivering both an oral presentation (by invitation) and a poster presentation</li>
-        </ul>
-    </div>
+Amazon - Corporate Headquarters, Seattle, WA
+Software Development Intern (Amazon Future Engineer Program)   May 2024 – August 2024
+Implemented 14 user experience tests for Amazon Health Services to elevate customer accessibility of 2 essential health care resource widgets by taking ownership of the testing process, including design, execution, and analysis
+Showcased 2 project presentations to internal team of 9-18 engineers, including management, providing an opportunity to delve into project feedback and raise the bar on every deliverable
+Developed project scope, including 9 testing approaches and 1 class diagram to produce a rigorous low-level design document, enabling delivery of impactful results by working backwards from 3 core success criteria
 
-    <div class="job">
-        <h3>Amazon – Corporate Headquarters</h3>
-        <p><em>Software Development Intern (Amazon Future Engineer Program) | Seattle, WA | May 2024 – Aug 2024</em></p>
-        <ul>
-            <li>Implemented 14 user experience tests for Amazon Health Services to elevate customer accessibility of 2 essential health care resource widgets</li>
-            <li>Presented 2 project demonstrations to internal teams including management</li>
-            <li>Developed low-level design documentation including 9 testing approaches and 1 class diagram</li>
-        </ul>
-    </div>
+NASA-Sponsored L’SPACE Mission Concept Academy  
+Lead Systems Engineer for “Team 5” (Remote)   September 2023 – December 2023
+Co-authored 4 mission-critical documents, including Mission Concept Review (MCR), System Requirements Review (SRR), Mission Definition Review (MDR), and Preliminary Design Review (PDR)
+Earned Certificate of Completion, including 5 skill badges (Gantt charts, cost estimate and budgeting tools/NASA instrument cost model, trade studies, technology readiness levels, N^2 charts, block diagrams, Failure Mode and Effects Analysis, risk assessment matrices)
+Received weekly mission development skills training from NASA scientists/engineers and collaborated with team of 11 students to design an orbital survey mission to collect compositional and geophysical data from Enceladus
 
-    <div class="job">
-        <h3>NASA-Sponsored L’SPACE Mission Concept Academy</h3>
-        <p><em>Lead Systems Engineer for “Team 5” (Remote) | Sep 2023 – Dec 2023</em></p>
-        <ul>
-            <li>Co-authored 4 mission-critical documents: MCR, SRR, MDR, PDR</li>
-            <li>Earned Certificate of Completion and 5 skill badges (Gantt charts, TRL, N² charts, FMEA, risk matrices)</li>
-            <li>Collaborated with team of 11 students to design an orbital survey mission to collect compositional and geophysical data from Enceladus</li>
-        </ul>
-    </div>
+Perelman Center for Advanced Medicine - Penn Memory Center, Philadelphia, PA 
+Research Intern / Junior Developer (Hybrid)      May 2023 – August 2023
+Presented research poster at 4 conferences/expos, earning 2 travel awards/university support
+Programmed app updates for a mobile cognitive app performance platform (mCAPP) for detection of Alzheimer's and related diseases to detect changes in processing speed and executive functioning 
 
-    <!-- Add remaining experience sections similarly -->
+NASA - John F. Kennedy Space Center, Merritt Island, FL 
+Lunar Simulation Development Intern – Unity Developer & SCRUM Team Lead (Remote)  June 2022 – August 2022
+Recognized as author on 1 published NASA Technical Report
+Rejoined development team for 2nd consecutive summer to expand upon prior project achievements
+Collaborated intensively and applied understanding of simulated physics, robotics control systems, and lunar terrain characteristics to deliver successful final summer demo to stakeholders
+Co-authored project abstract and presented summer reflection to entire engineering branch with intern team
+
+Lunar Simulation Development Intern – Unity Developer (Remote)  June 2021 – August 2021
+Developed GUI using Unity & C# of first iteration of lunar excavation environment simulation software by designing mockup and presenting weekly/biweekly demos to primary stakeholder/principal investigator, which saved time and clarified product goals throughout development process
+Strategized design implementation approaches by conducting research on persistent data, file format suitability, and data serialization and programming Unity demos to test design viability, optimizing resource utilization
+    </pre>
 </section>
 
-<section id="projects">
-    <h2>🔬 Projects & Research</h2>
+<section>
+    <h2>Projects & Research</h2>
+    <pre>
+DC-DC Voltage Conversion for High-Energy Astrophysics Experiments                           September 2025 – Present
+Undergraduate Researcher
+Evaluating ASIC-based DC-DC voltage conversion topologies to identify the optimal designs for space-based high-energy astrophysics instrumentation under the guidance of Dr. Troy Olsson (Biomedical & IoT Integrated Communications and Sensing Laboratory) & Mitch Newcomer (Physics Department, University of Pennsylvania)
 
-    <details>
-        <summary>DC-DC Voltage Conversion for High-Energy Astrophysics Experiments (Sep 2025 – Present)</summary>
-        <ul>
-            <li>Evaluating ASIC-based DC-DC voltage conversion topologies for space-based high-energy astrophysics instrumentation under the guidance of Dr. Troy Olsson & Mitch Newcomer</li>
-        </ul>
-    </details>
+Singh Center for Nanotechnology – Nanocharacterization & Device Fabrication              January 2025 - May 2025
+Fabricated and characterized quantum dots, graphene transistors, and MEMS cantilevers/comb arrays under the mentorship of Dr. Gyuseok Kim
+Executed precision experiments in cleanroom environments, employing advanced techniques and tools such as thin-film deposition, photolithography, etching, rapid thermal annealing, PVD, and CVD processes, directed self-assembly, microfluidics, AFM, SEM, TEM, EBL, reflectometry, 2D profilometry, ellipsometry, optical microscopy, probe station analysis, and wirebonding
+Authored publication-quality documentation using LaTeX in IEEE and AIP formats, ensuring rigor, reproducibility, and adherence to professional standards
 
-    <details>
-        <summary>Singh Center for Nanotechnology – Nanocharacterization & Device Fabrication (Jan 2025 - May 2025)</summary>
-        <ul>
-            <li>Fabricated quantum dots, graphene transistors, MEMS cantilevers/comb arrays</li>
-            <li>Executed precision experiments in cleanroom environments using AFM, SEM, TEM, EBL, PVD/CVD, and more</li>
-            <li>Authored publication-quality documentation using LaTeX in IEEE and AIP formats</li>
-        </ul>
-    </details>
+Rocket Synthesizer System – PCB Design, Assembly, & CAD Casework                      April 2025 - May 2025
+Designed, prototyped, and assembled a rocket synthesizer, including PCB layout in Altium, 3D-printed casework, and end-to-end prototyping with professional documentation
 
-    <!-- Add remaining projects similarly, using <details> for collapsible sections -->
+Smart Crochet Needle – Embedded Systems & CAD Design                                                 April 2025 - May 2025
+Collaborated with a 3-member team to design and prototype an embedded system that tracks crochet stitches using a pressure sensor and displays real-time progress on an LCD screen via I2C communication driven by a ATMEGA328PB microcontroller (C programming)
+Led the CAD design and 3D printing of the ergonomic casing, while also contributing to the bill of materials (BOM), hardware/software requirements, and system specifications
+Gained hands-on exposure to sensor integration, ADC sampling, SPI/I2C protocols, GPIO control, PWM signal generation, and interrupt-driven feedback systems through team development
+Delivered a functional prototype featuring accurate stitch tracking, pattern parsing from text files, real-time LCD updates, adaptive LED lighting modes, and haptic feedback, showcasing full hardware-software integration
+
+Transimpedance Amplifier Design – Analog IC Cadence Simulations                  November 2024 – December 2024
+Designed a Common-Gate TIA to meet target gain, bandwidth, and noise specifications, combining hand-calculated parameters (swing, unity gain frequency, MOSFET width, etc.) with comprehensive Cadence simulations (DC, AC, transient, noise, and stability)
+Characterized NMOS and PMOS devices: output characteristics, transconductance, and parasitic capacitances to optimize performance, including differential output waveforms and peak-to-peak voltage
+Compiled a detailed technical report integrating device characterization, simulation workflows, and TIA design strategy, highlighting trade-offs, parametric analysis, and reproducible analog signal evaluations
+
+Precision Metal Detector  – PCB Design, Analog Circuitry, & Signal Processing                      Jan 2024 – May 2024
+Engineered and integrated low-pass filters, mixers, fixed and variable oscillators (including hand-wound inductors), and multi-stage amplifiers to optimize signal detection and sensitivity
+Conducted frequency response analysis, iterative testing, and troubleshooting to validate performance, reduce noise, and ensure reliable operation
+Performed careful PCB assembly and soldering, demonstrating practical expertise in analog electronics and circuit prototyping
+Documented design and experimental results to professional standards, emphasizing reproducibility and rigorous signal analysis
+
+Analog Plotter – Dual Axis Closed Loop Control                                                                  Nov 2023 – Dec 2023
+Collaborated with project partner to implement a closed-loop control system using Arduino to achieve accurate dual-axis pen positioning
+Applied feedback loop theory with DC motors, linear potentiometers, op-amps, and PWM control to minimize error and improve precision
+Built and tested circuits (breadboard assembly, error signal amplification, RC filtering) to ensure stable motor driver operation
+Conducted system testing and troubleshooting, demonstrating improved accuracy over open-loop control in drawing complex shapes
+
+Occupal – IoT Cloud-Based Occupancy Sensor for Dorm Room Showers                              Nov 2022 – Dec 2022
+Developed an IoT device using Arduino and the Blynk platform for real-time cloud-based monitoring of dorm shower occupancy
+Assembled and tested circuits, constructed a mockup shower booth, and designed a Figma app interface for user interaction
+Collaborated with 2 teammates on hardware, app design, and pitch presentation, earning positive feedback for innovation and technical execution
+
+Penn Aerospace Club – Mars Rover Team                                                                        September 2025 – Present
+Avionics Subteam Mentor
+Advising the design and integration of advanced avionics systems for a rover in the URC Mars Society Competition, overseeing circuitry, sensors, and system reliability
+
+Penn Aerospace Club – High Powered Rocketry Team                                                      September 2024 - June 2025
+Avionics Subteam Engineer
+Engineered a transistor-based interface allowing the flight computer to autonomously control the GoPro camera, eliminating the need for manual intervention after rocket setup and supporting a successful launch at IREC 2025
+
+NASA Texas Space Grant Consortium – STEM Enhancement in Earth Science Program   
+Research Intern – GLOBE Earth System Explorers Team (Remote)   June 2021 – July 2021
+Collaborated closely with NASA Subject Matter Experts to investigate mosquito vector-borne diseases, co-authoring 16-page peer-reviewed research paper with intern team
+Co-presented abstract and poster with intern team at American Geophysical Union 2021 Fall Conference
+
+Pioneer Academics Research Program    
+Research Scholar – Computer Engineering (Remote)   July 2021 – September 2021
+Leveraged Python libraries to author 15-page independent research paper on applications of image processing algorithms in diagnostic radiology under the mentorship of Dr. Michael Gustafson (Duke University)
+    </pre>
 </section>
 
-<section id="leadership">
-    <h2>🌌 Extracurricular & Leadership</h2>
-    <details>
-        <summary>Penn Aerospace Club – Mars Rover Team (Avionics Subteam Mentor)</summary>
-        <ul>
-            <li>Advising design and integration of advanced avionics systems for URC Mars Society Competition rover</li>
-        </ul>
-    </details>
+<section>
+    <h2>Leadership & Public Service</h2>
+    <pre>
+National Society of Black Engineers Programs Chair                                                          September 2024 – Present
+Serve to advance community outreach initiatives, engaging students in STEM through events like “STEM Field Day” (2024) and “Dream, Design, Deploy” (2025) as a guest speaker, activity facilitator, and hands-on support volunteer
+Oversee and coordinate signature programs, including Crunchtime study sessions and the annual NSBE UPenn banquet, managing logistics, volunteer recruitment, event execution, and MC duties while ensuring smooth delivery of awards and raffle activities
 
-    <details>
-        <summary>NSBE – Programs Chair (Sep 2024 – Present)</summary>
-        <ul>
-            <li>Lead community outreach initiatives and organize signature programs including STEM events and the annual banquet</li>
-        </ul>
-    </details>
+NASA-Partner Eclipse Ambassador   February 2024 – June 2024
+Spearheaded event planning, organization, and facilitation of Pre-Eclipse Fair at Mary McLeod Bethune School for April 2024 Solar Eclipse to educate K-8th grade students about eclipse science and STEM, reaching 345+ students
+Selected as one of 9 students from competitive pool of 75 applicants to participate in the inaugural NASA-funded Heliophysics Winter Field School in Fairbanks, Alaska, collecting hands-on citizen field science space weather data and presenting original final essay
 
-    <!-- Add remaining leadership & service roles similarly -->
+Teaching Assistant – Fundamentals of Solid State Circuits                                                   January 2025 – May 2025
+Graded assignments and exams covering single-stage, differential, multi-stage, and operational amplifiers, filters, wave-shaping circuits, feedback, and stability
+Provided feedback to reinforce student understanding of analog circuit concepts 
+
+Citizen Field Scientist - Los Angeles Desert Research Expedition                                                          March 2025
+Leveraged NASA LASSIE robots to study post-wildfire soils and planetary regolith, examining stiction effects on intrinsic stress and authoring research paper connecting field data to planetary science
+
+Field Student Volunteer – Penn Netter Center                                                           August 2024 – December 2025
+Facilitated field science lessons in environmental science & engineering alongside 9th grade students, guiding small-group field investigations into stream ecology, urban watersheds, and human impacts on river systems
+
+Wharton Aerospace Conference Volunteer                                                                       March 2024 & March 2025
+Assisted with event logistics at the Wharton Aerospace Conference by managing registration tables, locating name tags, and directing attendees to sessions
+Recognized by conference organizers for professionalism and effective guest support throughout the event
+    </pre>
 </section>
 
-<section id="contact">
-    <h2>📫 Contact</h2>
-    <p class="contact">
-        Email: <a href="mailto:your.email@upenn.edu">your.email@upenn.edu</a><br>
-        LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a><br>
-        GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
-    </p>
+<section>
+    <h2>Honors & Awards</h2>
+    <pre>
+Honorable Mention, Engineering (2023) – Philadelphia AMP Annual Research Symposium & Mentoring Conference
+Amazon Future Engineer Scholarship (2022) – Awarded for academic excellence and commitment to computer science and STEM education
+NCWIT Aspirations in Computing National Winner (2022) – Selected from more than 3,500 applicants in recognition of aptitude and aspirations in technology and computing
+Technovation Regional Winner (International Competition) (2021) – Team named Best in Region (North America), selected from 25 U.S. semifinalist teams
+QuestBridge National College Match Scholarship (2021) – Awarded for academic excellence, leadership, and commitment to community service
+Widener National High School Leadership Award (2021) – Recognizes students who demonstrate leadership by addressing wrongs, standing up for what’s right, or making a meaningful impact
+    </pre>
 </section>
 
-<footer>
-    <p>© 2025 Jerula [Last Name]. Built with ❤️ using HTML & CSS.</p>
-</footer>
-
-</body>
-</html>
+<section>
+    <h2>Media</h2>
+    <pre>
+NASA, “Eclipses to Auroras: Eclipse Ambassadors Experience Winter Field School in Alaska”, February 18, 2022
+NASA, “Eclipses, Auroras, and the Spark of Becoming:
+```
