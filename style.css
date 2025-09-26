@@ -1,4 +1,42 @@
 /* General Styles */
+
+.project {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.project-img img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.project ul {
+    flex: 1;
+    padding-left: 0;
+}
+
+@media (max-width: 700px) {
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-img img {
+        max-width: 80%;
+    }
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
