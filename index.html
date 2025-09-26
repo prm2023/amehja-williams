@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Future NASA Astronaut – Electrical & Aerospace Engineering</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <style>
     body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f4f4f9; color:#111; }
     header { background:#0b3d91; color:white; padding:2rem; text-align:center; }
     header h1 { margin:0; }
     header p { margin:0.5rem 0 0; }
     section { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-    h2 { cursor:pointer; background:#e3e3ff; padding:0.5rem 1rem; border-radius:8px; display:flex; align-items:center; justify-content:space-between; margin-bottom:0; }
+    h2 { cursor:pointer; background:#e3e3ff; padding:0.5rem 1rem; border-radius:8px; display:flex; align-items:center; justify-content:space-between; margin-bottom:0; transition: background 0.3s; }
     h2:hover { background:#d0d0ff; }
     .content { display:none; padding:1rem; background:white; border-left:4px solid #0b3d91; border-radius:0 0 8px 8px; margin-bottom:1rem; }
     .subsection { margin-bottom:1rem; }
@@ -20,6 +20,28 @@
     .subsection ul { margin-top:0.2rem; padding-left:1.5rem; }
     footer { background:#0b3d91; color:white; text-align:center; padding:1.5rem; margin-top:2rem; }
     .emoji { margin-right:0.5rem; }
+
+    /* Project images */
+    .project-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+    .project-img img {
+        max-width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-img img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    }
+    .project-content ul {
+        flex: 1;
+    }
 </style>
 </head>
 <body>
@@ -30,149 +52,182 @@
 </header>
 
 <section>
-    <h2>🎓 Education <span>▼</span></h2>
-    <div class="content">
-        <div class="subsection">
-            <h3>University of Pennsylvania, School of Engineering & Applied Science</h3>
-            <ul>
-                <li>Candidate for BSE in Electrical Engineering – May 2026</li>
-                <li>Candidate for MSE in Electrical Engineering (Accelerated Master’s Program) – December 2026</li>
-                <li>A. James Clark Scholar</li>
-            </ul>
-        </div>
-    </div>
 
-    <h2>💻 Professional Skills <span>▼</span></h2>
-    <div class="content">
+<h2>🎓 Education <span>▼</span></h2>
+<div class="content">
+    <div class="subsection">
+        <h3>University of Pennsylvania, School of Engineering & Applied Science</h3>
         <ul>
-            <li>Cadence Design Systems, Altium, LTSpice</li>
-            <li>Oscilloscope, Multimeter</li>
-            <li>Python, C, C++</li>
+            <li>Candidate for BSE in Electrical Engineering – May 2026</li>
+            <li>Candidate for MSE in Electrical Engineering (Accelerated Master’s Program) – December 2026</li>
+            <li>A. James Clark Scholar</li>
         </ul>
     </div>
+</div>
 
-    <h2>🛠 Professional Experience <span>▼</span></h2>
-    <div class="content">
-        <div class="subsection">
-            <h3>Brookhaven National Laboratory - U.S. Department of Energy</h3>
-            <p><strong>Instrumentation Department Intern (SULI) - ASIC Design Group</strong></p>
-            <ul>
-                <li>Validated analog front-end and digital back-end performance of a novel smart ASIC for X-ray spectroscopy, including FIR filter processing, test pulse shape, linearity, and amplitude using Cadence simulations and laboratory measurements</li>
-                <li>Presented research in 3 departmental seminars and at the Brookhaven National Laboratory Summer Symposium (oral & poster presentations)</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h3>Amazon – Corporate Headquarters, Seattle, WA</h3>
-            <p><strong>Software Development Intern (Amazon Future Engineer Program)</strong> | May 2024 – August 2024</p>
-            <ul>
-                <li>Implemented 14 user experience tests for Amazon Health Services to improve accessibility of 2 key health widgets</li>
-                <li>Delivered 2 project presentations to teams of 9-18 engineers including management</li>
-                <li>Developed 9 testing approaches and a class diagram for a low-level design document to ensure impactful results</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h3>NASA-Sponsored L’SPACE Mission Concept Academy</h3>
-            <p><strong>Lead Systems Engineer for “Team 5” (Remote)</strong> | Sep 2023 – Dec 2023</p>
-            <ul>
-                <li>Co-authored 4 mission-critical documents (MCR, SRR, MDR, PDR)</li>
-                <li>Earned Certificate of Completion with 5 skill badges (Gantt charts, cost estimates, trade studies, TRLs, N² charts, FMEA, risk matrices)</li>
-                <li>Collaborated with 11 students to design an orbital survey mission for Enceladus</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h3>Perelman Center for Advanced Medicine - Penn Memory Center</h3>
-            <p><strong>Research Intern / Junior Developer (Hybrid)</strong> | May 2023 – Aug 2023</p>
-            <ul>
-                <li>Presented research poster at 4 conferences/expos, earning 2 travel awards</li>
-                <li>Programmed app updates for mobile cognitive app platform (mCAPP) to detect Alzheimer's disease indicators</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h3>NASA - John F. Kennedy Space Center</h3>
-            <p><strong>Lunar Simulation Development Intern – Unity Developer & SCRUM Team Lead (Remote)</strong> | June 2022 – Aug 2022</p>
-            <ul>
-                <li>Recognized as author on 1 published NASA Technical Report</li>
-                <li>Expanded prior project achievements and delivered final summer demo</li>
-                <li>Co-authored project abstract and presented to the entire engineering branch</li>
-            </ul>
-        </div>
-        <div class="subsection">
-            <h3>Lunar Simulation Development Intern – Unity Developer (Remote)</h3>
-            <p>June 2021 – Aug 2021</p>
-            <ul>
-                <li>Developed GUI for lunar excavation simulation software using Unity & C#</li>
-                <li>Presented weekly/biweekly demos to stakeholders to clarify product goals</li>
-            </ul>
-        </div>
+<h2>💻 Professional Skills <span>▼</span></h2>
+<div class="content">
+    <ul>
+        <li>Cadence Design Systems, Altium, LTSpice</li>
+        <li>Oscilloscope, Multimeter</li>
+        <li>Python, C, C++</li>
+    </ul>
+</div>
+
+<h2>🛠 Professional Experience <span>▼</span></h2>
+<div class="content">
+    <!-- Add subsections as before -->
+    <div class="subsection">
+        <h3>Brookhaven National Laboratory - U.S. Department of Energy</h3>
+        <p><strong>Instrumentation Department Intern (SULI) - ASIC Design Group</strong></p>
+        <ul>
+            <li>Validated analog front-end and digital back-end performance of a novel smart ASIC for X-ray spectroscopy, including FIR filter processing, test pulse shape, linearity, and amplitude using Cadence simulations and laboratory measurements</li>
+            <li>Presented research in 3 departmental seminars and at the Brookhaven National Laboratory Summer Symposium (oral & poster presentations)</li>
+        </ul>
     </div>
+    <div class="subsection">
+        <h3>Amazon – Corporate Headquarters, Seattle, WA</h3>
+        <p><strong>Software Development Intern (Amazon Future Engineer Program)</strong> | May 2024 – August 2024</p>
+        <ul>
+            <li>Implemented 14 user experience tests for Amazon Health Services to improve accessibility of 2 key health widgets</li>
+            <li>Delivered 2 project presentations to teams of 9-18 engineers including management</li>
+            <li>Developed 9 testing approaches and a class diagram for a low-level design document to ensure impactful results</li>
+        </ul>
+    </div>
+    <div class="subsection">
+    <h3>Penn Aerospace Club – Mars Rover Team</h3>
+    <p><strong>Avionics Subteam Mentor</strong> | Sep 2025 – Present</p>
+    <ul>
+        <li>Advising design and integration of advanced avionics systems for URC Mars Society Competition rover</li>
+        <li>Overseeing circuitry, sensors, and system reliability for full rover operation</li>
+    </ul>
+</div>
 
-    <h2>🔬 Projects & Research <span>▼</span></h2>
-    <div class="content">
-        <div class="subsection">
-            <h3>DC-DC Voltage Conversion for High-Energy Astrophysics Experiments</h3>
+<div class="subsection">
+    <h3>Penn Aerospace Club – High Powered Rocketry Team</h3>
+    <p><strong>Avionics Subteam Engineer</strong> | Sep 2024 – Jun 2025</p>
+    <ul>
+        <li>Engineered transistor-based interface allowing flight computer to autonomously control GoPro camera</li>
+        <li>Eliminated manual intervention after rocket setup, supporting successful launch at IREC 2025</li>
+    </ul>
+</div>
+
+<div class="subsection">
+    <h3>NASA Texas Space Grant Consortium – STEM Enhancement in Earth Science Program</h3>
+    <p><strong>Research Intern – GLOBE Earth System Explorers Team (Remote)</strong> | Jun 2021 – Jul 2021</p>
+    <ul>
+        <li>Collaborated with NASA Subject Matter Experts to investigate mosquito vector-borne diseases</li>
+        <li>Co-authored 16-page peer-reviewed research paper with intern team</li>
+        <li>Co-presented abstract and poster at American Geophysical Union 2021 Fall Conference</li>
+    </ul>
+</div>
+
+<div class="subsection">
+    <h3>Pioneer Academics Research Program</h3>
+    <p><strong>Research Scholar – Computer Engineering (Remote)</strong> | Jul 2021 – Sep 2021</p>
+    <ul>
+        <li>Authored 15-page independent research paper using Python libraries on image processing applications in diagnostic radiology</li>
+        <li>Mentored by Dr. Michael Gustafson, Duke University</li>
+    </ul>
+</div>
+
+</div>
+
+<h2>🔬 Projects & Research <span>▼</span></h2>
+<div class="content">
+    <div class="subsection">
+        <h3>DC-DC Voltage Conversion for High-Energy Astrophysics Experiments</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/dc-dc.jpg" alt="DC-DC Voltage Conversion">
+            </div>
             <ul>
                 <li>Undergraduate Researcher – Sep 2025 – Present</li>
                 <li>Evaluating ASIC-based DC-DC topologies for space-based astrophysics instrumentation under guidance of Dr. Troy Olsson & Mitch Newcomer</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Singh Center for Nanotechnology – Nanocharacterization & Device Fabrication</h3>
+    </div>
+
+    <div class="subsection">
+        <h3>Singh Center for Nanotechnology – Nanocharacterization & Device Fabrication</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/nanotech.jpg" alt="Nanotech Device Fabrication">
+            </div>
             <ul>
                 <li>Fabricated and characterized quantum dots, graphene transistors, MEMS cantilevers/comb arrays (Jan 2025 – May 2025)</li>
                 <li>Executed precision experiments using cleanroom techniques: photolithography, etching, RTA, PVD/CVD, AFM, SEM, TEM, EBL, and more</li>
                 <li>Documented experiments using IEEE/AIP-style LaTeX reports</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Rocket Synthesizer System – PCB Design, Assembly, & CAD Casework</h3>
+    </div>
+
+    <div class="subsection">
+        <h3>Rocket Synthesizer System – PCB Design, Assembly, & CAD Casework</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/rocket-synth.jpg" alt="Rocket Synthesizer">
+            </div>
             <ul>
                 <li>Designed, prototyped, and assembled a rocket synthesizer (Apr 2025 – May 2025)</li>
                 <li>PCB layout in Altium, 3D-printed casework, end-to-end prototyping</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Smart Crochet Needle – Embedded Systems & CAD Design</h3>
-			<div class="content project">
-			    <div class="project-img">
-			        <img src="assets/images/smart-crochet.jpg" alt="Smart Crochet Needle Prototype">
-			    </div>
+    </div>
+
+    <div class="subsection">
+        <h3>Smart Crochet Needle – Embedded Systems & CAD Design</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/smart-crochet.jpg" alt="Smart Crochet Needle Prototype">
+            </div>
             <ul>
                 <li>Collaborated on a 3-member team to track crochet stitches using ATMEGA328PB microcontroller</li>
                 <li>Designed ergonomic 3D-printed casing and LCD interface, real-time feedback, LED and haptic integration</li>
             </ul>
-			</div>
         </div>
-        <div class="subsection">
-            <h3>Transimpedance Amplifier Design – Analog IC Cadence Simulations</h3>
+    </div>
+
+    <div class="subsection">
+        <h3>Transimpedance Amplifier Design – Analog IC Cadence Simulations</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/tia.jpg" alt="Transimpedance Amplifier">
+            </div>
             <ul>
                 <li>Designed a Common-Gate TIA to meet gain, bandwidth, and noise specs (Nov 2024 – Dec 2024)</li>
                 <li>Hand-calculated parameters, ran Cadence simulations, documented trade-offs and parametric analysis</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Precision Metal Detector – PCB Design, Analog Circuitry, & Signal Processing</h3>
+    </div>
+
+    <div class="subsection">
+        <h3>Precision Metal Detector – PCB Design, Analog Circuitry, & Signal Processing</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/metal-detector.jpg" alt="Precision Metal Detector">
+            </div>
             <ul>
                 <li>Engineered low-pass filters, mixers, oscillators, multi-stage amplifiers (Jan 2024 – May 2024)</li>
                 <li>Tested and validated frequency response, optimized sensitivity and reliability</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Analog Plotter – Dual Axis Closed Loop Control</h3>
+    </div>
+
+    <div class="subsection">
+        <h3>Analog Plotter – Dual Axis Closed Loop Control</h3>
+        <div class="project-content">
+            <div class="project-img">
+                <img src="assets/images/analog-plotter.jpg" alt="Analog Plotter">
+            </div>
             <ul>
                 <li>Implemented closed-loop dual-axis control with Arduino, DC motors, op-amps, and PWM (Nov – Dec 2023)</li>
                 <li>Improved accuracy over open-loop systems in drawing complex shapes</li>
             </ul>
         </div>
-        <div class="subsection">
-            <h3>Occupal – IoT Cloud-Based Occupancy Sensor</h3>
-            <ul>
-                <li>Arduino + Blynk IoT device for dorm shower occupancy (Nov – Dec 2022)</li>
-                <li>Built circuits, mockup, and Figma interface; collaborated with 2 teammates</li>
-            </ul>
-        </div>
     </div>
-
-    <h2>🌟 Leadership & Public Service <span>▼</span></h2>
+</div>
+<h2>🌟 Leadership & Public Service <span>▼</span></h2>
 <div class="content">
     <div class="subsection">
         <h3>National Society of Black Engineers – Programs Chair</h3>
@@ -233,21 +288,6 @@
     </ul>
 </div>
 
-    <h2>📚 Publications & Presentations <span>▼</span></h2>
-<div class="content">
-    <ul>
-        <li>Olsson, T., Newcomer, M., & [Your Name], “ASIC-Based DC-DC Voltage Conversion for High-Energy Astrophysics Experiments”, University of Pennsylvania, 2025</li>
-        <li>Williams, A., et al. (2022). Simulated Excavation Environment for Lunar Operations. NASA.</li>
-        <li>Williams, A. et al. (2022). Developing An Algorithm for Runtime Gameplay Adjustments in A Mobile Cognitive Assessment. University of Pennsylvania.</li>
-        <ul>
-		<li>Emerging Researchers National Conference in STEM (2024)</li>
-        	<li>Annual Biomedical Research Conference for Minoritized Scientists (2024)</li>
-        	<li>Philadelphia Lewis Stokes Alliance for Minoritized Scientists Annual Research Symposium and Mentoring Conference (2023)</li>
-	</ul>
-        <li>Williams, A. et al. (2021). An Analysis of the Effect of Land Cover Type on Mosquito Populations [Abstract]. American Geophysical Union.</li>
-    </ul>
-</div>
-
 <h2>📰 Media <span>▼</span></h2>
 <div class="content">
     <ul>
@@ -260,12 +300,12 @@
         <li>NASA Aurorasaurus, “Dreams fulfilled and galactic marvels unlocked as the aurora brings people together”, Apr 28, 2025</li>
         <li>Penn Today, “Celebrating Shakespeare’s First Folio”, Apr 26, 2023</li>
         <li>Penn Today, “Rivers in a changing world”, Dec 3, 2024</li>
-        <li>University of Pennsylvania Electrical & Systems Engineering Department, “EE Junior Amehja Williams shares her experience as a NASA-Partner Eclipse Ambassador”, April 11, 2025</li>
+        <li>University of Pennsylvania Electrical & Systems Engineering Department, “EE Junior Amehja Williams shares her experience as a NASA-Partner Eclipse Ambassador”, Apr 11, 2025</li>
         <li>Technical.ly, “Why These Teens Built a No-code App to Tackle Climate Change, Locally”, Sep 10, 2021</li>
     </ul>
 </div>
 
-    
+
 </section>
 
 <footer>
@@ -273,13 +313,15 @@
 </footer>
 
 <script>
-    const headers = document.querySelectorAll('h2');
-    headers.forEach(h => {
-        h.addEventListener('click', () => {
-            const content = h.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
-        });
+const headers = document.querySelectorAll('h2');
+headers.forEach(h => {
+    h.addEventListener('click', () => {
+        const next = h.nextElementSibling;
+        if(next.classList.contains('content')) {
+            next.style.display = next.style.display === 'block' ? 'none' : 'block';
+        }
     });
+});
 </script>
 
 </body>
